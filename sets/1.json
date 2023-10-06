@@ -1,1 +1,152 @@
-[]
+[
+    {
+        "id": 1,
+        "term": "Merhaba",
+        "meaning": "Hello"
+    },
+    {
+        "id": 2,
+        "term": "Nasılsın?",
+        "meaning": "How are you?"
+    },
+    {
+        "id": 3,
+        "term": "Teşekkür ederim",
+        "meaning": "Thank you"
+    },
+    {
+        "id": 4,
+        "term": "Lütfen",
+        "meaning": "Please"
+    },
+    {
+        "id": 5,
+        "term": "Evet",
+        "meaning": "Yes"
+    },
+    {
+        "id": 6,
+        "term": "Hayır",
+        "meaning": "No"
+    },
+    {
+        "id": 7,
+        "term": "Ne yapıyorsun?",
+        "meaning": "What are you doing?"
+    },
+    {
+        "id": 8,
+        "term": "Ben iyiyim",
+        "meaning": "I'm fine"
+    },
+    {
+        "id": 9,
+        "term": "Adınız nedir?",
+        "meaning": "What's your name?"
+    },
+    {
+        "id": 10,
+        "term": "Benim adım Ahmet",
+        "meaning": "My name is Ahmet"
+    },
+    {
+        "id": 11,
+        "term": "Lütfen yardım eder misiniz?",
+        "meaning": "Can you help me, please?"
+    },
+    {
+        "id": 12,
+        "term": "Nerede yaşıyorsunuz?",
+        "meaning": "Where do you live?"
+    },
+    {
+        "id": 13,
+        "term": "Hangi dil konuşuyorsunuz?",
+        "meaning": "Which language do you speak?"
+    },
+    {
+        "id": 14,
+        "term": "Ben Türkçe konuşuyorum",
+        "meaning": "I speak Turkish"
+    },
+    {
+        "id": 15,
+        "term": "Hangi ülkeden geliyorsunuz?",
+        "meaning": "Which country are you from?"
+    },
+    {
+        "id": 16,
+        "term": "Ben Türkiye'den geliyorum",
+        "meaning": "I'm from Turkey"
+    },
+    {
+        "id": 17,
+        "term": "Bugün hava nasıl?",
+        "meaning": "How is the weather today?"
+    },
+    {
+        "id": 18,
+        "term": "Bugün çok sıcak",
+        "meaning": "It's very hot today"
+    },
+    {
+        "id": 19,
+        "term": "Lütfen bekleyin",
+        "meaning": "Please wait"
+    },
+    {
+        "id": 20,
+        "term": "Bunu anlamıyorum",
+        "meaning": "I don't understand this"
+    },
+    {
+        "id": 21,
+        "term": "Yardım!",
+        "meaning": "Help!"
+    },
+    {
+        "id": 22,
+        "term": "Teşekkür ederim, çok naziksiniz",
+        "meaning": "Thank you, you're very kind"
+    },
+    {
+        "id": 23,
+        "term": "Geçmiş olsun",
+        "meaning": "Get well soon"
+    },
+    {
+        "id": 24,
+        "term": "Bunu nereden aldınız?",
+        "meaning": "Where did you get this?"
+    },
+    {
+        "id": 25,
+        "term": "Saat kaç?",
+        "meaning": "What time is it?"
+    },
+    {
+        "id": 26,
+        "term": "Beni affet",
+        "meaning": "Forgive me"
+    },
+    {
+        "id": 27,
+        "term": "Eğlenceli bir gün dilerim",
+        "meaning": "I hope you have a fun day"
+    },
+    {
+        "id": 28,
+        "term": "Beni ara",
+        "meaning": "Call me"
+    },
+    {
+        "id": 29,
+        "term": "Ben buradayım",
+        "meaning": "I am here"
+    },
+    {
+        "id": 30,
+        "term": "Hoşça kal",
+        "meaning": "Goodbye"
+    }
+]
