@@ -1,34 +1,103 @@
--Formatted HTML-
- 
 <!DOCTYPE html>
-<html>
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Sahte Json Api için hazırlanmıştır.</title>
-   </head>
-   <body style=" font-family: Verdana, monospace, sans-serif;
-      font-size: 12px;
-      font-weight: bold;
-      text-align: justify;
-      min-height: 800px;">
-      <div style="
-         width: 600px;
-         height: 300px;
-         padding: 20px;
-         background-color: #CCCCFF;
-         position: relative;
-         margin: auto;">
-         <h3>Sahte Json Api için hazırlanmıştır.</h3>
-         <br/>
-         <a href="https://leventyadirga.github.io/SampleJson/SampleJson.json">Servis için tıklayınız.</a>
-         <br/>
-         <br/>
-         <br/>
-         <h3>Levent YADIRGA</h3>
-         Android Developer
-         <br/>
-         lyadirga@gmail.com
-      </div>
-   </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gelir Hesap Makinesi</title>
+    <style>
+      body {
+          font-family: Verdana, sans-serif;
+          font-size: 16px;
+          text-align: center;
+          margin: 50px;
+      }
+
+      h1 {
+          color: #333;
+      }
+
+      label {
+          display: block;
+          margin-top: 10px;
+      }
+
+      input {
+          width: 100%;
+          max-width: 300px; /* Maksimum genişlik 300px */
+          padding: 5px;
+          margin-top: 5px;
+      }
+
+      button {
+          margin-top: 20px;
+          padding: 10px;
+          font-size: 16px;
+          cursor: pointer;
+      }
+
+      #sonuc {
+          margin-top: 20px;
+          font-size: 18px;
+      }
+  </style>
+</head>
+<body>
+
+    <h1>Gelir Hesap Makinesi</h1>
+
+    <label for="input1">Her ay yatırılan para:</label>
+    <input type="number" id="aylik_yatan" name="input1" required>
+    
+    <br>
+
+    <label for="input1">Aylık kazanç oranı % (yüzdelik olarak):</label>
+    <input type="number" id="aylik_kazanc_orani" name="input2" step="0.01" required>
+
+    <br>
+
+    <label for="input3">Yıl Sayısı:</label>
+    <input type="number" id="yil_sayisi" name="input3" required>
+
+    <br>
+
+    <button onclick="hesapla()">Hesapla</button>
+
+    <br>
+
+    <div id="sonuc">hdxsjhsj</div>
+
+    <script>
+        function hesapla() {
+            var sayi1 = parseFloat(document.getElementById("aylik_yatan").value);
+            var sayi2 = parseFloat(document.getElementById("aylik_kazanc_orani").value);
+            var sayi3 = parseFloat(document.getElementById("yil_sayisi").value);
+
+            if (sayi1 < 0 || sayi2 < 0 || sayi3 < 0 || isNaN(sayi1) || isNaN(sayi2) || isNaN(sayi3)) {
+                document.getElementById("sonuc").innerHTML = "Lütfen geçerli pozitif sayıları girin.";
+                return;
+            }
+            var toplam = yatirim(sayi1, sayi2, sayi3);
+
+            document.getElementById("sonuc").innerHTML = "Toplam: " + toplam.toLocaleString('tr-TR');
+        }
+        /**
+ * @param {number} anapara: aylık yatırılan tutar
+ * @param {number} kazancOrani: aylık getiri (enflasyondan arındırılmış miktar)
+ * @param {number} yilSayisi: bu yatırımın kaç yıl boyunca yapılacağı
+ * @returns {number} toplam: yatırımın sonunda elde edilen toplam tutar
+ */
+function yatirim(anapara, kazancOrani, yilSayisi) {
+    var aySayisi = yilSayisi * 12;
+    var toplam = 0.0;
+    var katsayi = 1 + kazancOrani / 100;
+
+    for (var i = 0; i < aySayisi; i++) {
+        toplam = (toplam + anapara) * katsayi;
+        console.log("Ay " + (i + 1) + " : " + toplam);
+    }
+
+    return Math.round(toplam);
+}
+    </script>
+
+</body>
 </html>
